@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BTL_QLHD.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BTL_QLHD"
+    xmlns:house="clr-namespace:BTL_QLHD.View.HousePages"
+    xmlns:service="clr-namespace:BTL_QLHD.View.ServicePages"
+    xmlns:views="clr-namespace:BTL_QLHD.View"
+    
+    Shell.FlyoutBehavior="Flyout"
+    Title="BTL_QLHD">
+
+    <ShellContent
+        Title="Trang chủ"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="mainpage" />
+
+    <ShellContent
+        Title="Quản lý nhà"
+        ContentTemplate="{DataTemplate house:HousePage}"
+        Route="housepage" />
+
+    <ShellContent
+        Title="Quản lý dịch vụ"
+        ContentTemplate="{DataTemplate service:ServicePage}"
+        Route="servicepage" />
+
+    <ShellContent
+        Title="Quản lý hóa đơn"
+        ContentTemplate="{DataTemplate views:InvoicePage}"
+        Route="invoicepage" />
+
+</Shell>

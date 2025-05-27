@@ -1,0 +1,57 @@
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="BTL_QLHD.View.HousePages.UpdateHousePopup">
+
+    <Frame
+        BackgroundColor="White"
+        CornerRadius="12"
+        Padding="20"
+        WidthRequest="500"
+        HeightRequest="550"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        HasShadow="True">
+
+        <ScrollView>
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Cập nhật thông tin nhà"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       Margin="0,0,0,0"/>
+
+                <Entry x:Name="idEntry" IsEnabled="False" Margin="0,0,0,10" />
+                
+                <Label Text="Số nhà" TextColor="Black" Margin="0,0,0,2"/>
+                <Entry x:Name="soNhaEntry" TextColor="Black" IsEnabled="False" BackgroundColor="#D3D3D3" Margin="0,0,0,10" />
+
+                <Label Text="Chủ nhà" TextColor="Black" Margin="0,0,0,2"/>
+                <Entry x:Name="tenChuNhaEntry" TextColor="Black" Margin="0,0,0,10" />
+
+                <Label Text="SĐT chủ nhà" TextColor="Black" Margin="0,0,0,2"/>
+                <Entry x:Name="sdtEntry" TextColor="Black" Margin="0,0,0,10" />
+
+                <Label Text="Địa chỉ" TextColor="Black" Margin="0,0,0,2"/>
+                <Entry x:Name="diaChiEntry" TextColor="Black" Margin="0,0,0,10" />
+
+                <Button Text="Cập nhật"
+                        BackgroundColor="Orange"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Padding="10,5"
+                        Clicked="OnSaveClicked" />
+
+                <Button Text="Hủy"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Padding="10,5"
+                        Clicked="OnCancelClicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Frame>
+</toolkit:Popup>

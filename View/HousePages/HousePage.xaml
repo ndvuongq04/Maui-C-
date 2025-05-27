@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTL_QLHD.View.HousePages.HousePage"
+    Title="Quản lý Nhà"
+    BackgroundColor="White">
+
+    <StackLayout Padding="10" Spacing="10">
+
+        <Grid Padding="0"  HeightRequest="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <SearchBar
+                x:Name="searchBar"
+                Placeholder="Tìm kiếm theo số nhà, chủ nhà, địa chỉ"
+                SearchButtonPressed="OnSearchBarButtonPressed"
+                TextColor="Black"
+                Grid.Column="0" />
+
+            <Button
+                Text="Thêm"
+                Clicked="OnAddClicked"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Grid.Column="1" />
+        </Grid>
+
+        <!-- Header -->
+        <Grid ColumnSpacing="20" Padding="10" BackgroundColor="LightGray" Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <!-- Id -->
+                <ColumnDefinition Width="100" />
+                <!-- Số nhà -->
+                <ColumnDefinition Width="200" />
+                <!-- Chủ nhà -->
+                <ColumnDefinition Width="200" />
+                <!-- SĐT -->
+                <ColumnDefinition Width="*" />
+                <!-- Địa chỉ -->
+                <ColumnDefinition Width="100" />
+                <!-- Nút sửa -->
+            </Grid.ColumnDefinitions>
+
+            <!-- ID có thể bấm -->
+            <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
+                <Label Text="ID" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
+                <!-- Mũi tên ▲/▼ sắp xếp cho ID -->
+                <Label x:Name="SortIdIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSortIdTapped" NumberOfTapsRequired="1" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <!-- Số nhà có thể bấm -->
+            <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
+                <Label Text="Số nhà" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
+                <Label x:Name="SortSoNhaIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSortSoNhaTapped" NumberOfTapsRequired="1" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <!-- Tên chủ nhà có thể bấm -->
+            <StackLayout Grid.Column="2" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
+                <Label Text="Chủ nhà" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
+                <Label x:Name="SortTenChuNhaIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSortTenChuNhaTapped" NumberOfTapsRequired="1" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <!-- SDT có thể bấm -->
+            <StackLayout Grid.Column="3" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
+                <Label Text="SDT" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
+                <Label x:Name="SortSDTIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSortSDTTapped" NumberOfTapsRequired="1" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <!-- Địa chỉ có thể bấm -->
+            <StackLayout Grid.Column="4" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5" >
+                <Label Text="Địa chỉ" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
+                <Label x:Name="SortDiaChiIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSortDiaChiTapped" NumberOfTapsRequired="1" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
+            <!-- Để trống cho nút sửa -->
+            <Label Text="Tùy chỉnh" Grid.Column="5" FontAttributes="Bold" TextColor="Black" />
+        </Grid>
+
+        <!-- Bảng dữ liệu -->
+        <CollectionView
+            x:Name="houseCollectionView"
+            SelectionMode="Single"
+            HeightRequest="400"
+            Margin="0,0,0,0">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        BackgroundColor="Beige"
+                        CornerRadius="5"
+                        Padding="10"
+                        Margin="0,5"
+                        HasShadow="False"
+                        BorderColor="Transparent">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <!-- Id -->
+                                <ColumnDefinition Width="50" />
+                                <!-- Số nhà -->
+                                <ColumnDefinition Width="100" />
+                                <!-- Chủ nhà -->
+                                <ColumnDefinition Width="200" />
+                                <!-- SĐT -->
+                                <ColumnDefinition Width="200" />
+                                <!-- Địa chỉ -->
+                                <ColumnDefinition Width="*" />
+                                <!-- Cột dành cho nút Sửa -->
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding Id}" Grid.Column="0" TextColor="Black"  VerticalOptions="Center" />
+                            <Label Text="{Binding HouseNumber}" Grid.Column="1" TextColor="Black" VerticalOptions="Center" />
+                            <Label Text="{Binding OwnerName}" Grid.Column="2" TextColor="Black" VerticalOptions="Center" />
+                            <Label Text="{Binding OwnerPhone}" Grid.Column="3" TextColor="Black" VerticalOptions="Center" />
+                            <Label Text="{Binding Address}" Grid.Column="4" TextColor="Black" VerticalOptions="Center" />
+
+                            <!-- Nút Sửa -->
+                            <Button
+                                Text="Sửa"
+                                Grid.Column="5"
+                                BackgroundColor="LightGray"
+                                TextColor="Black"
+                                CornerRadius="10"
+                                Padding="10,5"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Clicked="OnEditItemClicked"
+                                CommandParameter="{Binding .}" />
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
