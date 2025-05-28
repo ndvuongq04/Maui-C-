@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BTL-QLHD</name>
+    </assembly>
+    <members>
+        <member name="T:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.HouseNumber">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.houseNumber"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.OwnerName">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.ownerName"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.OwnerPhone">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.ownerPhone"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.Address">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.address"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel.SaveAsync"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.HousePages.HousePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.Houses">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.houses"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.FilteredHouses">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.filteredHouses"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SearchKeyword">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.searchKeyword"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.CurrentSortColumn">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.currentSortColumn"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.IsSortAscending">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.isSortAscending"/>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.OnSearchKeywordChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SearchKeyword"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SearchKeyword"/> is changed.</remarks>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.loadHousesCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.LoadHousesCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.LoadHousesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.LoadHousesAsync"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.searchCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SearchCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.Search"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.addCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.AddAsync"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.editCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.EditCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.EditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.EditAsync(BTL_QLHD.Models.House)"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.refreshCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.RefreshAsync"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.sortIdCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortIdCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortIdCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortId"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.sortSoNhaCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortSoNhaCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortSoNhaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortSoNha"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.sortTenChuNhaCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortTenChuNhaCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortTenChuNhaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortTenChuNha"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.sortSDTCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortSDTCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortSDTCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortSDT"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.sortDiaChiCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortDiaChiCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortDiaChiCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.HousePageViewModel.SortDiaChi"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.HouseNumber">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.houseNumber"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.OwnerName">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.ownerName"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.OwnerPhone">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.ownerPhone"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.Address">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.address"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveAsync"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.Name">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.name"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.Unit">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.unit"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.Price">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.price"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel.Save"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.DeleteAsync"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.ServiceCategories">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.serviceCategories"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.SearchKeyword">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.searchKeyword"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.loadServiceCategoriesCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.LoadServiceCategoriesCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.LoadServiceCategoriesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.LoadServiceCategoriesAsync"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.searchCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.SearchCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.SearchCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.Search"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.addCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.AddAsync"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.editCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.EditCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.EditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.EditAsync(BTL_QLHD.Models.ServiceCategory)"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.DeleteAsync(BTL_QLHD.Models.ServiceCategory)"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.Name">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.name"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.Unit">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.unit"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.Price">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.price"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.SaveAsync"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HouseNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HouseNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OwnerName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OwnerName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OwnerPhone">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OwnerPhone" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Houses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Houses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FilteredHouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FilteredHouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SearchKeyword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SearchKeyword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentSortColumn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentSortColumn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsSortAscending">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsSortAscending" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Unit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Unit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Price">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Price" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceCategories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceCategories" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HouseNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HouseNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OwnerName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OwnerName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OwnerPhone">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OwnerPhone" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Address">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Address" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Houses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Houses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FilteredHouses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FilteredHouses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SearchKeyword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SearchKeyword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentSortColumn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentSortColumn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsSortAscending">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsSortAscending" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Unit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Unit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Price">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Price" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceCategories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceCategories" generated properties.</summary>
+        </member>
+    </members>
+</doc>

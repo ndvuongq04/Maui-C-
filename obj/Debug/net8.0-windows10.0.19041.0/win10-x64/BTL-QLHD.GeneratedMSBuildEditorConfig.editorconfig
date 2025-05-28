@@ -87,8 +87,20 @@ build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.ServicePages
 build_metadata.AdditionalFiles.TargetPath = View\ServicePages\AddServiceCategoryPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = View\ServicePages\AddServiceCategoryPopup.xaml
 
-[D:/Dai_hoc/NET-1/BTL-QLHD/View/ServicePages/ServicePage.xaml]
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/ServicePages/DeleteServiceCategoryPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.ServicePages.ServicePage.xaml
-build_metadata.AdditionalFiles.TargetPath = View\ServicePages\ServicePage.xaml
-build_metadata.AdditionalFiles.RelativePath = View\ServicePages\ServicePage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.ServicePages.DeleteServiceCategoryPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ServicePages\DeleteServiceCategoryPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ServicePages\DeleteServiceCategoryPopup.xaml
+
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/ServicePages/ServiceCategoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.ServicePages.ServiceCategoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ServicePages\ServiceCategoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ServicePages\ServiceCategoryPage.xaml
+
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/ServicePages/UpdateServiceCategoryPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.ServicePages.UpdateServiceCategoryPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ServicePages\UpdateServiceCategoryPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ServicePages\UpdateServiceCategoryPopup.xaml

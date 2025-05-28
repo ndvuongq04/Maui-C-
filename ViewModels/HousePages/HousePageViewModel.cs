@@ -27,10 +27,21 @@ public partial class HousePageViewModel : ObservableObject
     [ObservableProperty]
     private string searchKeyword;
 
+    [ObservableProperty]
+    private string currentSortColumn = string.Empty;
+
+    [ObservableProperty]
+    private bool isSortAscending = true;
+
     public HousePageViewModel(HouseService houseService)
     {
         _houseService = houseService;
         LoadHousesCommand.Execute(null);
+    }
+
+    partial void OnSearchKeywordChanged(string value)
+    {
+        Search();
     }
 
     [RelayCommand]
@@ -86,48 +97,82 @@ public partial class HousePageViewModel : ObservableObject
         SearchKeyword = string.Empty;
     }
 
+    // SORT LOGIC FOR ALL COLUMNS
     [RelayCommand]
     public void SortId()
     {
-        var sorted = Houses.OrderBy(h => h.Id).ToList();
-        FilteredHouses.Clear();
-        foreach (var house in sorted)
-            FilteredHouses.Add(house);
+        ApplySort("Id", h => h.Id);
     }
 
     [RelayCommand]
     public void SortSoNha()
     {
-        var sorted = Houses.OrderBy(h => h.HouseNumber).ToList();
-        FilteredHouses.Clear();
-        foreach (var house in sorted)
-            FilteredHouses.Add(house);
+        ApplySort("HouseNumber", h => h.HouseNumber);
     }
 
     [RelayCommand]
     public void SortTenChuNha()
     {
-        var sorted = Houses.OrderBy(h => h.OwnerName).ToList();
-        FilteredHouses.Clear();
-        foreach (var house in sorted)
-            FilteredHouses.Add(house);
+        ApplySort("OwnerName", h => h.OwnerName);
     }
 
     [RelayCommand]
     public void SortSDT()
     {
-        var sorted = Houses.OrderBy(h => h.OwnerPhone).ToList();
-        FilteredHouses.Clear();
-        foreach (var house in sorted)
-            FilteredHouses.Add(house);
+        ApplySort("OwnerPhone", h => h.OwnerPhone);
     }
 
     [RelayCommand]
     public void SortDiaChi()
     {
-        var sorted = Houses.OrderBy(h => h.Address).ToList();
+        ApplySort("Address", h => h.Address);
+    }
+
+    private void ApplySort<T>(string column, Func<House, T> keySelector)
+    {
+        if (CurrentSortColumn == column)
+            IsSortAscending = !IsSortAscending;
+        else
+        {
+            CurrentSortColumn = column;
+            IsSortAscending = true;
+        }
+
+        // Sử dụng FilteredHouses để sort kết quả đang hiển thị
+        var sorted = IsSortAscending
+            ? FilteredHouses.OrderBy(keySelector).ToList()
+            : FilteredHouses.OrderByDescending(keySelector).ToList();
+
         FilteredHouses.Clear();
         foreach (var house in sorted)
             FilteredHouses.Add(house);
+
+        // Notify icon for all columns
+        OnPropertyChanged(nameof(IsSortIdIconVisible));
+        OnPropertyChanged(nameof(SortIdIcon));
+        OnPropertyChanged(nameof(IsSortSoNhaIconVisible));
+        OnPropertyChanged(nameof(SortSoNhaIcon));
+        OnPropertyChanged(nameof(IsSortTenChuNhaIconVisible));
+        OnPropertyChanged(nameof(SortTenChuNhaIcon));
+        OnPropertyChanged(nameof(IsSortSDTIconVisible));
+        OnPropertyChanged(nameof(SortSDTIcon));
+        OnPropertyChanged(nameof(IsSortDiaChiIconVisible));
+        OnPropertyChanged(nameof(SortDiaChiIcon));
     }
+
+    // ICON PROPERTIES FOR ALL COLUMNS
+    public bool IsSortIdIconVisible => CurrentSortColumn == "Id";
+    public string SortIdIcon => IsSortAscending ? "▲" : "▼";
+
+    public bool IsSortSoNhaIconVisible => CurrentSortColumn == "HouseNumber";
+    public string SortSoNhaIcon => IsSortAscending ? "▲" : "▼";
+
+    public bool IsSortTenChuNhaIconVisible => CurrentSortColumn == "OwnerName";
+    public string SortTenChuNhaIcon => IsSortAscending ? "▲" : "▼";
+
+    public bool IsSortSDTIconVisible => CurrentSortColumn == "OwnerPhone";
+    public string SortSDTIcon => IsSortAscending ? "▲" : "▼";
+
+    public bool IsSortDiaChiIconVisible => CurrentSortColumn == "Address";
+    public string SortDiaChiIcon => IsSortAscending ? "▲" : "▼";
 }

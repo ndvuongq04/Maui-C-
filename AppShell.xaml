@@ -23,7 +23,7 @@
 
     <ShellContent
         Title="Quản lý dịch vụ"
-        ContentTemplate="{DataTemplate service:ServicePage}"
+        ContentTemplate="{DataTemplate service:ServiceCategoryPage}"
         Route="servicepage" />
 
     <ShellContent

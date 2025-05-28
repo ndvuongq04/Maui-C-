@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="BTL_QLHD.View.ServicePages.UpdateServiceCategoryPopup">
+
+    <Frame
+        BackgroundColor="White"
+        CornerRadius="16"
+        Padding="25"
+        WidthRequest="420"
+        HeightRequest="460"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        HasShadow="True">
+
+        <ScrollView>
+            <VerticalStackLayout Spacing="12">
+
+                <!-- Tiêu đề -->
+                <Label Text="Cập nhật dịch vụ"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#333" />
+
+                <!-- Tên dịch vụ -->
+                <Label Text="Tên dịch vụ" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Name, Mode=TwoWay}"
+                       Placeholder="Nhập tên dịch vụ"
+                       TextColor="#222"
+                       Margin="0,0,0,8" />
+
+                <!-- Giá -->
+                <Label Text="Giá" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Price, Mode=TwoWay}"
+                       Placeholder="Nhập giá"
+                       Keyboard="Numeric"
+                       TextColor="#222"
+                       Margin="0,0,0,8" />
+
+                <!-- Đơn vị -->
+                <Label Text="Đơn vị" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Unit, Mode=TwoWay}"
+                       Placeholder="Nhập đơn vị"
+                       TextColor="#222"
+                       Margin="0,0,0,12" />
+
+                <!-- Nút hành động -->
+                <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                    <Button Text="Lưu"
+                            Command="{Binding SaveCommand}"
+                            BackgroundColor="Orange"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,5" />
+
+                    <Button Text="Hủy"
+                            Clicked="OnCancelClicked"
+                            BackgroundColor="Red"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,5" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Frame>
+</toolkit:Popup>

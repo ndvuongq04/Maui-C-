@@ -40,12 +40,29 @@ namespace BTL_QLHD
             builder.Services.AddTransient<AddHousePopup>();
             builder.Services.AddTransient<UpdateHousePopup>();
 
-            builder.Services.AddTransient<ServicePage>();
+            builder.Services.AddTransient<ServiceCategoryPage>();
+            builder.Services.AddTransient<AddServiceCategoryPopup>();
+            builder.Services.AddTransient<UpdateServiceCategoryPopup>();
+            builder.Services.AddTransient<DeleteServiceCategoryPopup>();
+
+
+
+
+
+
+
             builder.Services.AddTransient<InvoicePage>();
 
             // Đăng ký ViewModel
             builder.Services.AddTransient<BTL_QLHD.ViewModels.HousePages.HousePageViewModel>();
             builder.Services.AddTransient<BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel>();
+
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel>();
+
 
             // Thêm CommunityToolkit modal
             builder.UseMauiCommunityToolkit();

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="BTL_QLHD.View.ServicePages.DeleteServiceCategoryPopup">
+
+    <Frame
+        BackgroundColor="White"
+        CornerRadius="16"
+        Padding="25"
+        WidthRequest="360"
+        HeightRequest="240"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        HasShadow="True">
+
+        <VerticalStackLayout Spacing="20"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+
+            <!-- Thông báo xác nhận -->
+            <Label Text="Bạn có chắc chắn muốn xóa dịch vụ này?"
+                   HorizontalTextAlignment="Center"
+                   FontSize="18"
+                   TextColor="#333"
+                   FontAttributes="Bold" />
+
+            <!-- Nút hành động -->
+            <HorizontalStackLayout Spacing="12">
+                <Button Text="Xóa"
+                        Command="{Binding DeleteCommand}"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Padding="10,5"
+                        WidthRequest="100" />
+
+                <Button Text="Hủy"
+                        Clicked="OnCancelClicked"
+                        BackgroundColor="#ccc"
+                        TextColor="Black"
+                        CornerRadius="10"
+                        Padding="10,5"
+                        WidthRequest="100" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </Frame>
+</toolkit:Popup>

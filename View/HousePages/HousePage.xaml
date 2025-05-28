@@ -49,7 +49,7 @@
             <!-- ID có thể bấm -->
             <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
                 <Label Text="ID" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
-                <Label x:Name="SortIdIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <Label Text="{Binding SortIdIcon}" IsVisible="{Binding IsSortIdIconVisible}" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SortIdCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
@@ -58,7 +58,7 @@
             <!-- Số nhà có thể bấm -->
             <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
                 <Label Text="Số nhà" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
-                <Label x:Name="SortSoNhaIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <Label Text="{Binding SortSoNhaIcon}" IsVisible="{Binding IsSortSoNhaIconVisible}" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SortSoNhaCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
@@ -67,7 +67,7 @@
             <!-- Tên chủ nhà có thể bấm -->
             <StackLayout Grid.Column="2" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
                 <Label Text="Chủ nhà" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
-                <Label x:Name="SortTenChuNhaIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <Label Text="{Binding SortTenChuNhaIcon}" IsVisible="{Binding IsSortTenChuNhaIconVisible}" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SortTenChuNhaCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
@@ -76,7 +76,7 @@
             <!-- SDT có thể bấm -->
             <StackLayout Grid.Column="3" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
                 <Label Text="SDT" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
-                <Label x:Name="SortSDTIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <Label Text="{Binding SortSDTIcon}" IsVisible="{Binding IsSortSDTIconVisible}" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SortSDTCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
@@ -85,7 +85,7 @@
             <!-- Địa chỉ có thể bấm -->
             <StackLayout Grid.Column="4" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5" >
                 <Label Text="Địa chỉ" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
-                <Label x:Name="SortDiaChiIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
+                <Label Text="{Binding SortDiaChiIcon}" IsVisible="{Binding IsSortDiaChiIconVisible}" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding SortDiaChiCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>

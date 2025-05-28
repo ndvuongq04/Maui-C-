@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTL_QLHD.View.ServicePages.ServiceCategoryPage"
+    Title="Quản lý Dịch vụ"
+    BackgroundColor="White">
+
+    <StackLayout Padding="10" Spacing="10">
+
+        <Grid Padding="0" HeightRequest="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <SearchBar
+                Placeholder="Tìm kiếm theo tên, đơn vị, giá"
+                Text="{Binding SearchKeyword, Mode=TwoWay}"
+                TextColor="Black"
+                Grid.Column="0" />
+
+            <Button
+                Text="Thêm"
+                Command="{Binding AddCommand}"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Grid.Column="1" />
+        </Grid>
+
+        <Grid ColumnSpacing="20" Padding="10" BackgroundColor="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="ID" FontAttributes="Bold" Grid.Column="0" TextColor="Black" />
+            <Label Text="Tên dịch vụ" FontAttributes="Bold" Grid.Column="1" TextColor="Black" />
+            <Label Text="Giá" FontAttributes="Bold" Grid.Column="2" TextColor="Black" />
+            <Label Text="Đơn vị" FontAttributes="Bold" Grid.Column="3" TextColor="Black" />
+            <Label Text="Tùy chỉnh" FontAttributes="Bold" Grid.Column="4" TextColor="Black" />
+        </Grid>
+
+        <CollectionView
+            x:Name="serviceCollectionView"
+            ItemsSource="{Binding FilteredServiceCategories}"
+            SelectionMode="Single"
+            HeightRequest="400">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        BackgroundColor="Beige"
+                        CornerRadius="5"
+                        Padding="10"
+                        Margin="0,5"
+                        HasShadow="False"
+                        BorderColor="Transparent">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding Id}" Grid.Column="0" TextColor="Black" VerticalOptions="Center" />
+                            <Label Text="{Binding Name}" Grid.Column="1" TextColor="Black" VerticalOptions="Center" />
+                            <Label Text="{Binding Price}" Grid.Column="2" TextColor="Black" VerticalOptions="Center" />
+                            <Label Text="{Binding Unit}" Grid.Column="3" TextColor="Black" VerticalOptions="Center" />
+
+                            <StackLayout Grid.Column="4" Orientation="Horizontal" Spacing="10" HorizontalOptions="Center">
+                                <Button Text="Sửa"
+                                        Command="{Binding BindingContext.EditCommand, Source={x:Reference Name=serviceCollectionView}}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="LightGray"
+                                        TextColor="Black"
+                                        CornerRadius="10"
+                                        Padding="10,5" />
+                                <Button Text="Xóa"
+                                        Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=serviceCollectionView}}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="IndianRed"
+                                        TextColor="White"
+                                        CornerRadius="10"
+                                        Padding="10,5" />
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

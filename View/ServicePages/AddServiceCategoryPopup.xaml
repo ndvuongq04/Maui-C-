@@ -3,41 +3,70 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-    x:Class="BTL_QLHD.View.ServicePages.AddServiceCategoryPopup">
+    x:Class="BTL_QLHD.View.ServicePages.AddServiceCategoryPopup"
+    x:Name="RootPopup">
 
     <Frame
         BackgroundColor="White"
-        CornerRadius="12"
-        Padding="20"
-        WidthRequest="400"
-        HeightRequest="420"
+        CornerRadius="16"
+        Padding="25"
+        WidthRequest="420"
+        HeightRequest="460"
         HorizontalOptions="Center"
         VerticalOptions="Center"
-        HasShadow="True">
+        HasShadow="True"
+        BindingContext="{Binding BindingContext, Source={x:Reference RootPopup}}">
 
-        <VerticalStackLayout Spacing="15">
-            <Label TextColor="Black" Text="Thêm dịch vụ mới" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ScrollView>
+            <VerticalStackLayout Spacing="12">
 
-            <Entry x:Name="nameEntry" TextColor="Black" Placeholder="Tên dịch vụ" />
-            <Entry x:Name="priceEntry" TextColor="Black" Placeholder="Giá (VD: 10000)" Keyboard="Numeric" />
-            <Entry x:Name="unitEntry" TextColor="Black" Placeholder="Đơn vị tính (VD: m3, kWh, lần...)" />
+                <!-- Tiêu đề -->
+                <Label Text="Thêm dịch vụ"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#333" />
 
-            <Button
-            BackgroundColor="Blue"
-            TextColor="White"
-            CornerRadius="10"
-            Padding="10,5"
-            Text="Thêm"
-            Clicked="OnSaveClicked" />
+                <!-- Tên dịch vụ -->
+                <Label Text="Tên dịch vụ" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Name, Mode=TwoWay}"
+                       Placeholder="Nhập tên dịch vụ"
+                       TextColor="#222"
+                       Margin="0,0,0,8" />
 
-            <Button
-            BackgroundColor="Red"
-            TextColor="White"
-            CornerRadius="10"
-            Padding="10,5"
-            Text="Hủy"
-            Clicked="OnCancelClicked" />
-        </VerticalStackLayout>
+                <!-- Giá -->
+                <Label Text="Giá" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Price, Mode=TwoWay}"
+                       Placeholder="Nhập giá"
+                       Keyboard="Numeric"
+                       TextColor="#222"
+                       Margin="0,0,0,8" />
+
+                <!-- Đơn vị -->
+                <Label Text="Đơn vị" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Unit, Mode=TwoWay}"
+                       Placeholder="Nhập đơn vị"
+                       TextColor="#222"
+                       Margin="0,0,0,12" />
+
+                <!-- Nút hành động -->
+                <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                    <Button Text="Lưu"
+                            Command="{Binding SaveCommand}"
+                            BackgroundColor="Orange"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,5"/>
+
+                    <Button Text="Hủy"
+                            Clicked="OnCancelClicked"
+                            BackgroundColor="Red"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,5" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
     </Frame>
-
 </toolkit:Popup>

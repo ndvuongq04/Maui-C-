@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\addhousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\addhousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\servicecategorypages\\updateservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\servicecategorypages\\updateservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\updatehousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\updatehousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\servicecategorypages\\addservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\servicecategorypages\\addservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\housepages\\updatehousepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\housepages\\updatehousepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\servicepages\\servicecategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\servicepages\\servicecategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\housepages\\addhousepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\housepages\\addhousepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\housepages\\housepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\housepages\\housepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\housepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\housepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\housepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\housepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\addhousepopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\addhousepopup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\servicecategorypages\\servicecategorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\servicecategorypages\\servicecategorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateHousePopup.xaml",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\UpdateHousePopup.xaml",
-              "RelativeDocumentMoniker": "View\\HousePages\\UpdateHousePopup.xaml",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\UpdateHousePopup.xaml",
-              "RelativeToolTip": "View\\HousePages\\UpdateHousePopup.xaml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T10:46:44.608Z",
+              "DocumentIndex": 0,
+              "Title": "UpdateServiceCategoryPopupViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:40:37.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HousePageViewModel.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\HousePageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\HousePages\\HousePageViewModel.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\HousePageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\HousePages\\HousePageViewModel.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAkwE0AAAAqAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AddServiceCategoryPopupViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:37:32.611Z",
+              "WhenOpened": "2025-05-28T18:38:06.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UpdateHousePopupViewModel.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\UpdateHousePopupViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\HousePages\\UpdateHousePopupViewModel.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\UpdateHousePopupViewModel.cs",
-              "RelativeToolTip": "ViewModels\\HousePages\\UpdateHousePopupViewModel.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAADwvzMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:37:11.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddHousePopup.xaml",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\AddHousePopup.xaml",
-              "RelativeDocumentMoniker": "View\\HousePages\\AddHousePopup.xaml",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\AddHousePopup.xaml",
-              "RelativeToolTip": "View\\HousePages\\AddHousePopup.xaml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Title": "ServiceCategoryPage.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\ServicePages\\ServiceCategoryPage.xaml",
+              "RelativeDocumentMoniker": "View\\ServicePages\\ServiceCategoryPage.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\ServicePages\\ServiceCategoryPage.xaml",
+              "RelativeToolTip": "View\\ServicePages\\ServiceCategoryPage.xaml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T10:55:23.492Z",
+              "WhenOpened": "2025-05-28T18:36:23.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddHousePopupViewModel.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\AddHousePopupViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\HousePages\\AddHousePopupViewModel.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\AddHousePopupViewModel.cs",
-              "RelativeToolTip": "ViewModels\\HousePages\\AddHousePopupViewModel.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwCUAAAAfAAAAAAAAAA==",
+              "Title": "ServiceCategoryPageViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAlwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:55:06.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HousePage.xaml",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\HousePage.xaml",
-              "RelativeDocumentMoniker": "View\\HousePages\\HousePage.xaml",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\HousePage.xaml",
-              "RelativeToolTip": "View\\HousePages\\HousePage.xaml",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJIAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T10:41:09.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HousePage.xaml.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\HousePage.xaml.cs",
-              "RelativeDocumentMoniker": "View\\HousePages\\HousePage.xaml.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\HousePage.xaml.cs",
-              "RelativeToolTip": "View\\HousePages\\HousePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:37:06.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddHousePopup.xaml.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\AddHousePopup.xaml.cs",
-              "RelativeDocumentMoniker": "View\\HousePages\\AddHousePopup.xaml.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\AddHousePopup.xaml.cs",
-              "RelativeToolTip": "View\\HousePages\\AddHousePopup.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T10:37:00.72Z",
+              "WhenOpened": "2025-05-28T18:35:43.836Z",
               "EditorCaption": ""
             }
           ]
