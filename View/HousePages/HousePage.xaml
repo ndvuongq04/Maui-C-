@@ -8,7 +8,7 @@
 
     <StackLayout Padding="10" Spacing="10">
 
-        <Grid Padding="0"  HeightRequest="50">
+        <Grid Padding="0" HeightRequest="50">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -17,13 +17,13 @@
             <SearchBar
                 x:Name="searchBar"
                 Placeholder="Tìm kiếm theo số nhà, chủ nhà, địa chỉ"
-                SearchButtonPressed="OnSearchBarButtonPressed"
+                Text="{Binding SearchKeyword, Mode=TwoWay}"
                 TextColor="Black"
                 Grid.Column="0" />
 
             <Button
                 Text="Thêm"
-                Clicked="OnAddClicked"
+                Command="{Binding AddCommand}"
                 TextColor="White"
                 BackgroundColor="Blue"
                 Grid.Column="1" />
@@ -49,10 +49,9 @@
             <!-- ID có thể bấm -->
             <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Start" Spacing="5">
                 <Label Text="ID" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
-                <!-- Mũi tên ▲/▼ sắp xếp cho ID -->
                 <Label x:Name="SortIdIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSortIdTapped" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding SortIdCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
@@ -61,7 +60,7 @@
                 <Label Text="Số nhà" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <Label x:Name="SortSoNhaIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSortSoNhaTapped" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding SortSoNhaCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
@@ -70,7 +69,7 @@
                 <Label Text="Chủ nhà" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <Label x:Name="SortTenChuNhaIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSortTenChuNhaTapped" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding SortTenChuNhaCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
@@ -79,7 +78,7 @@
                 <Label Text="SDT" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <Label x:Name="SortSDTIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSortSDTTapped" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding SortSDTCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
@@ -88,7 +87,7 @@
                 <Label Text="Địa chỉ" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                 <Label x:Name="SortDiaChiIconLabel" Text="▲" FontAttributes="Bold" VerticalOptions="Center" IsVisible="False" TextColor="Black" />
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSortDiaChiTapped" NumberOfTapsRequired="1" />
+                    <TapGestureRecognizer Command="{Binding SortDiaChiCommand}" NumberOfTapsRequired="1" />
                 </StackLayout.GestureRecognizers>
             </StackLayout>
 
@@ -99,6 +98,7 @@
         <!-- Bảng dữ liệu -->
         <CollectionView
             x:Name="houseCollectionView"
+            ItemsSource="{Binding FilteredHouses}"
             SelectionMode="Single"
             HeightRequest="400"
             Margin="0,0,0,0">
@@ -144,7 +144,7 @@
                                 Padding="10,5"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"
-                                Clicked="OnEditItemClicked"
+                                Command="{Binding BindingContext.EditCommand, Source={x:Reference houseCollectionView}}"
                                 CommandParameter="{Binding .}" />
                         </Grid>
                     </Frame>

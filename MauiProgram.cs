@@ -1,6 +1,7 @@
 ﻿using BTL_QLHD.Services;
 using BTL_QLHD.View;
 using BTL_QLHD.View.HousePages;
+//using BTL_QLHD.View.HousePages.HousePage;
 using BTL_QLHD.View.ServicePages;
 
 using CommunityToolkit.Maui;
@@ -41,6 +42,10 @@ namespace BTL_QLHD
 
             builder.Services.AddTransient<ServicePage>();
             builder.Services.AddTransient<InvoicePage>();
+
+            // Đăng ký ViewModel
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.HousePages.HousePageViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.HousePages.AddHousePopupViewModel>();
 
             // Thêm CommunityToolkit modal
             builder.UseMauiCommunityToolkit();

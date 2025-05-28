@@ -26,23 +26,23 @@
                 <Entry x:Name="idEntry" IsEnabled="False" Margin="0,0,0,10" />
                 
                 <Label Text="Số nhà" TextColor="Black" Margin="0,0,0,2"/>
-                <Entry x:Name="soNhaEntry" TextColor="Black" IsEnabled="False" BackgroundColor="#D3D3D3" Margin="0,0,0,10" />
+                <Entry x:Name="soNhaEntry" Text="{Binding HouseNumber, Mode=TwoWay}" TextColor="Black" IsEnabled="False" BackgroundColor="#D3D3D3" Margin="0,0,0,10" />
 
                 <Label Text="Chủ nhà" TextColor="Black" Margin="0,0,0,2"/>
-                <Entry x:Name="tenChuNhaEntry" TextColor="Black" Margin="0,0,0,10" />
+                <Entry x:Name="tenChuNhaEntry" Text="{Binding OwnerName, Mode=TwoWay}" TextColor="Black" Margin="0,0,0,10" />
 
                 <Label Text="SĐT chủ nhà" TextColor="Black" Margin="0,0,0,2"/>
-                <Entry x:Name="sdtEntry" TextColor="Black" Margin="0,0,0,10" />
+                <Entry x:Name="sdtEntry" Text="{Binding OwnerPhone, Mode=TwoWay}" TextColor="Black" Margin="0,0,0,10" />
 
                 <Label Text="Địa chỉ" TextColor="Black" Margin="0,0,0,2"/>
-                <Entry x:Name="diaChiEntry" TextColor="Black" Margin="0,0,0,10" />
+                <Entry x:Name="diaChiEntry" Text="{Binding Address, Mode=TwoWay}" TextColor="Black" Margin="0,0,0,10" />
 
-                <Button Text="Cập nhật"
+                <Button Text="Lưu"
+                        Command="{Binding SaveCommand}"
                         BackgroundColor="Orange"
                         TextColor="White"
                         CornerRadius="10"
-                        Padding="10,5"
-                        Clicked="OnSaveClicked" />
+                        Padding="10,5" />
 
                 <Button Text="Hủy"
                         BackgroundColor="Red"

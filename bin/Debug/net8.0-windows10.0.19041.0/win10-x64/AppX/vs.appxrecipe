@@ -30,25 +30,25 @@
     <AppXManifest Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-27T11:20:50.625</Modified>
+      <Modified>2025-05-28T11:03:46.735</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-05-27T11:14:37.336</Modified>
+      <Modified>2025-05-28T09:48:37.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BTL-QLHD.runtimeconfig.json">
       <PackagePath>BTL-QLHD.runtimeconfig.json</PackagePath>
-      <Modified>2025-05-26T17:40:44.497</Modified>
+      <Modified>2025-05-28T09:48:37.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BTL-QLHD.dll">
       <PackagePath>BTL-QLHD.dll</PackagePath>
-      <Modified>2025-05-27T11:20:50.106</Modified>
+      <Modified>2025-05-28T11:03:46.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BTL-QLHD.exe</PackagePath>
-      <Modified>2025-05-27T11:20:50.115</Modified>
+      <Modified>2025-05-28T11:03:46.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BTL-QLHD.deps.json">
       <PackagePath>BTL-QLHD.deps.json</PackagePath>
-      <Modified>2025-05-27T11:14:37.079</Modified>
+      <Modified>2025-05-28T09:48:37.577</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -305,6 +305,10 @@
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\communitytoolkit.maui.core\8.0.0\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
       <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
       <Modified>2024-03-29T12:33:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\communitytoolkit.mvvm\8.4.0\lib\net8.0-windows10.0.17763\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2024-12-12T07:54:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>

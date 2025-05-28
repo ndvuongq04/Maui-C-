@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YkJRrOCsU3E=",
+  "dgSpecHash": "JuMA9F22UnI=",
   "success": true,
   "projectFilePath": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\BTL-QLHD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\communitytoolkit.maui\\8.0.0\\communitytoolkit.maui.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\communitytoolkit.maui.core\\8.0.0\\communitytoolkit.maui.core.8.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="BTL_QLHD.View.ServicePages.AddServiceCategoryPopup">
+
+    <Frame
+        BackgroundColor="White"
+        CornerRadius="12"
+        Padding="20"
+        WidthRequest="400"
+        HeightRequest="420"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        HasShadow="True">
+
+        <VerticalStackLayout Spacing="15">
+            <Label TextColor="Black" Text="Thêm dịch vụ mới" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <Entry x:Name="nameEntry" TextColor="Black" Placeholder="Tên dịch vụ" />
+            <Entry x:Name="priceEntry" TextColor="Black" Placeholder="Giá (VD: 10000)" Keyboard="Numeric" />
+            <Entry x:Name="unitEntry" TextColor="Black" Placeholder="Đơn vị tính (VD: m3, kWh, lần...)" />
+
+            <Button
+            BackgroundColor="Blue"
+            TextColor="White"
+            CornerRadius="10"
+            Padding="10,5"
+            Text="Thêm"
+            Clicked="OnSaveClicked" />
+
+            <Button
+            BackgroundColor="Red"
+            TextColor="White"
+            CornerRadius="10"
+            Padding="10,5"
+            Text="Hủy"
+            Clicked="OnCancelClicked" />
+        </VerticalStackLayout>
+    </Frame>
+
+</toolkit:Popup>

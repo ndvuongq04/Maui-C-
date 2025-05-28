@@ -185,3 +185,5 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLiteP
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\BTL-QLHD.sourcelink.json
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll

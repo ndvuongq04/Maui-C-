@@ -7,39 +7,71 @@
 
     <Frame
         BackgroundColor="White"
-        CornerRadius="12"
-        Padding="20"
-        WidthRequest="400"
-        HeightRequest="420"
+        CornerRadius="16"
+        Padding="25"
+        WidthRequest="420"
+        HeightRequest="520"
+        
         HorizontalOptions="Center"
         VerticalOptions="Center"
         HasShadow="True">
 
-        <VerticalStackLayout Spacing="15">
-            <Label TextColor="Black" Text="Thêm nhà mới" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ScrollView>
+            <VerticalStackLayout Spacing="12">
+                <!-- Tiêu đề -->
+                <Label Text="Thêm nhà mới"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#333" />
 
-            <Entry x:Name="soNhaEntry" TextColor="Black" Placeholder="Số nhà" />
-            <Entry x:Name="tenChuNhaEntry" TextColor="Black" Placeholder="Chủ nhà" />
-            <Entry x:Name="sdtEntry" TextColor="Black" Placeholder="SĐT chủ nhà" />
-            <Entry x:Name="diaChiEntry" TextColor="Black" Placeholder="Địa chỉ" />
+                <!-- Số nhà -->
+                <Label Text="Số nhà" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding HouseNumber, Mode=TwoWay}"
+                       Placeholder="Nhập số nhà"
+                       TextColor="#222"
+                       Margin="0,0,0,8" />
 
-            <Button
-            BackgroundColor="Blue"
-            TextColor="White"
-            CornerRadius="10"
-            Padding="10,5"
-            Text="Thêm"
-            Clicked="OnSaveClicked" />
-            
-            
-            <Button
-            BackgroundColor="Red"
-            TextColor="White"
-            CornerRadius="10"
-            Padding="10,5"
-            Text="Hủy"
-            Clicked="OnCancelClicked" />
-        </VerticalStackLayout>
+                <!-- Tên chủ nhà -->
+                <Label Text="Chủ nhà" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding OwnerName, Mode=TwoWay}"
+                       Placeholder="Nhập tên chủ nhà"
+                       TextColor="#222"
+                       Margin="0,0,0,8" />
+
+                <!-- SĐT -->
+                <Label Text="SĐT chủ nhà" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding OwnerPhone, Mode=TwoWay}"
+                       Placeholder="Nhập SĐT"
+                       TextColor="#222"
+                       Keyboard="Telephone"
+                       Margin="0,0,0,8" />
+
+                <!-- Địa chỉ -->
+                <Label Text="Địa chỉ" TextColor="#444" FontSize="14" />
+                <Entry Text="{Binding Address, Mode=TwoWay}"
+                       Placeholder="Nhập địa chỉ"
+                       TextColor="#222"
+                       Margin="0,0,0,12" />
+
+                <!-- Nút hành động -->
+                <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                    <Button Text="Lưu"
+                            Command="{Binding SaveCommand}"
+                            BackgroundColor="Orange"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,5" />
+
+                    <Button Text="Hủy"
+                            Clicked="OnCancelClicked"
+                            BackgroundColor="Red"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,5" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
     </Frame>
-
 </toolkit:Popup>
