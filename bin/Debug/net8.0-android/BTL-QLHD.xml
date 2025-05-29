@@ -141,6 +141,86 @@
         <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveAsync"/>.</summary>
         </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput">
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.ServiceCategoryId">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.serviceCategoryId"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.ServiceName">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.serviceName"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.Unit">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.unit"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.UsageValue">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.usageValue"/>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.Houses">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.houses"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.SelectedHouse">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.selectedHouse"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.Month">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.month"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.Year">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.year"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.InvoiceDate">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.invoiceDate"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.Status">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.status"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.TotalAmount">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.totalAmount"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.Description">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.description"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.ServiceUsages">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.serviceUsages"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel.SaveAsync"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SearchKeyword">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.searchKeyword"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.FilteredInvoices">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.filteredInvoices"/>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.OnSearchKeywordChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SearchKeyword"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SearchKeyword"/> is changed.</remarks>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.addCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.AddAsync"/>.</summary>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.editCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.EditCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.EditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.EditAsync(BTL_QLHD.Models.Invoice)"/>.</summary>
+        </member>
         <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -167,7 +247,7 @@
             <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.DeleteCommand"/>.</summary>
         </member>
         <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.DeleteCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.DeleteAsync"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel.Delete"/>.</summary>
         </member>
         <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel">
             <inheritdoc/>
@@ -177,11 +257,19 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.ServiceCategories">
-            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.serviceCategories"/>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.AllServiceCategories">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.allServiceCategories"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.FilteredServiceCategories">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.filteredServiceCategories"/>
         </member>
         <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.SearchKeyword">
             <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.searchKeyword"/>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.OnSearchKeywordChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.SearchKeyword"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.SearchKeyword"/> is changed.</remarks>
         </member>
         <member name="F:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.loadServiceCategoriesCommand">
             <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.ServiceCategoryPageViewModel.LoadServiceCategoriesCommand"/>.</summary>
@@ -230,7 +318,32 @@
             <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.SaveCommand"/>.</summary>
         </member>
         <member name="P:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.SaveCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.SaveAsync"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel.Save"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.HouseId">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.houseId"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.ServiceId">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.serviceId"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.Year">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.year"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.Month">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.month"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.UsageValue">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.usageValue"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.addCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.ServiceUsagePages.ServiceUsageViewModel.AddAsync"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -385,17 +498,62 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsSortAscending">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsSortAscending" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceCategoryId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceCategoryId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceName" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Unit">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Unit" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UsageValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UsageValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedHouse">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedHouse" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Month">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Month" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Year">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Year" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.InvoiceDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "InvoiceDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Status">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Status" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceUsages">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceUsages" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FilteredInvoices">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FilteredInvoices" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Price">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Price" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceCategories">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceCategories" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AllServiceCategories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AllServiceCategories" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FilteredServiceCategories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FilteredServiceCategories" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HouseId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HouseId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceId" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -430,17 +588,62 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsSortAscending">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsSortAscending" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceCategoryId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceCategoryId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceName" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Unit">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Unit" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UsageValue">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UsageValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedHouse">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedHouse" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Month">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Month" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Year">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Year" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.InvoiceDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "InvoiceDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Status">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Status" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalAmount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalAmount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceUsages">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceUsages" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FilteredInvoices">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FilteredInvoices" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Price">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Price" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceCategories">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceCategories" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AllServiceCategories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AllServiceCategories" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FilteredServiceCategories">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FilteredServiceCategories" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HouseId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HouseId" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceId">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceId" generated properties.</summary>
         </member>
     </members>
 </doc>

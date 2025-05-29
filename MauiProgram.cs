@@ -1,6 +1,8 @@
 ﻿using BTL_QLHD.Services;
 using BTL_QLHD.View;
 using BTL_QLHD.View.HousePages;
+using BTL_QLHD.View.InvoicePages;
+
 //using BTL_QLHD.View.HousePages.HousePage;
 using BTL_QLHD.View.ServicePages;
 
@@ -34,6 +36,11 @@ namespace BTL_QLHD
             // Đăng ký các service singleton, inject connection
             builder.Services.AddSingleton<HouseService>();
             builder.Services.AddSingleton<ServiceCategoryService>();
+            builder.Services.AddSingleton<InvoiceService>();
+            builder.Services.AddSingleton<ServiceUsageService>();
+
+
+
 
             // Đăng ký các trang 
             builder.Services.AddTransient<HousePage>();
@@ -46,12 +53,19 @@ namespace BTL_QLHD
             builder.Services.AddTransient<DeleteServiceCategoryPopup>();
 
 
-
-
-
-
-
             builder.Services.AddTransient<InvoicePage>();
+            builder.Services.AddTransient<AddInvoicePopup>();
+            builder.Services.AddTransient<ViewDetailInvoicePopup>();
+            builder.Services.AddTransient<UpdateInvoicePopup>();
+
+
+
+
+
+
+
+
+
 
             // Đăng ký ViewModel
             builder.Services.AddTransient<BTL_QLHD.ViewModels.HousePages.HousePageViewModel>();
@@ -62,6 +76,11 @@ namespace BTL_QLHD
             builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel>();
             builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.UpdateServiceCategoryPopupViewModel>();
             builder.Services.AddTransient<BTL_QLHD.ViewModels.ServiceCategoryPages.DeleteServiceCategoryPopupViewModel>();
+
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel>();
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel>();
 
 
             // Thêm CommunityToolkit modal

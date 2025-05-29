@@ -11,18 +11,15 @@ namespace BTL_QLHD.Models
         public int Id { get; set; }
 
         [Column("house_number")]
-        public string HouseNumber { get; set; }
+        public string HouseNumber { get; set; } = string.Empty;
 
         [Column("owner_name")]
-        public string OwnerName { get; set; }
+        public string OwnerName { get; set; } = string.Empty;
 
         [Column("owner_phone")]
-        public string OwnerPhone { get; set; }
+        public string OwnerPhone { get; set; } = string.Empty;
 
         [Column("address")]
-        public string Address { get; set; }
-
-
-
+        public string Address { get; set; } = string.Empty;
     }
 }

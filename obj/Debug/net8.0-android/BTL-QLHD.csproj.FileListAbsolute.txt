@@ -14,8 +14,18 @@ D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\BTL-QLHD.csproj.AssemblyRefer
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\mauiimage.inputs
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\mauifont.inputs
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\mauisplash.inputs
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\splash.png
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\splash.png
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\splash.png
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\splash.png
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\splash.png
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\mauisplash.stamp
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\mauifont.stamp
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Regular.ttf
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Semibold.ttf
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
@@ -50,6 +60,7 @@ D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\stamp\_BuildLibraryImportsCac
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\case_map.txt
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\__Microsoft.Android.Resource.Designer.cs
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\res.flag
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\A52E68AE06E1868A-files.cache
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\resizetizer\2E90E89EAD89A570-files.cache
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\lp\95\jl\files.cache
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-android\lp\96\jl\files.cache

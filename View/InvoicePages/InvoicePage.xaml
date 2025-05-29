@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BTL_QLHD.View.InvoicePages.InvoicePage"
+    Title="Quản lý Hóa đơn"
+    BackgroundColor="White">
+
+    <StackLayout Padding="10" Spacing="10" Margin="0,5,0,0" >
+
+        <!-- Tìm kiếm & nút Thêm -->
+        <Grid Padding="0" HeightRequest="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <SearchBar
+                x:Name="searchBar"
+                Placeholder="Tìm kiếm theo số nhà, tên chủ nhà, địa chỉ , trạng thái , tổng tiền ,..."
+                Text="{Binding SearchKeyword, Mode=TwoWay}"
+                TextColor="Black"
+                Grid.Column="0" />
+
+            <Button
+                Text="Thêm"
+                Command="{Binding AddCommand}"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Grid.Column="1" />
+        </Grid>
+        <HorizontalStackLayout Padding="10" Spacing="20" VerticalOptions="Start" Margin="0,0,0,5" >
+            <VerticalStackLayout>
+                <Picker
+             Title="Chọn tháng/năm"
+             ItemsSource="{Binding MonthYearList}"
+             SelectedItem="{Binding SelectedMonthYear, Mode=TwoWay}"
+             WidthRequest="160"
+             BackgroundColor="#f0f4ff"
+             TextColor="Black"
+             FontAttributes="Bold"
+             Margin="0,0,0,0"
+             HeightRequest="44"
+             HorizontalOptions="Start"
+             VerticalOptions="Center"
+             />
+            <Label Text="{Binding SelectedMonthYear}" TextColor="Black" Margin="0,0,0,5" />
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Picker
+             Title="Trạng thái"
+             ItemsSource="{Binding StatusList}"
+             SelectedItem="{Binding SelectedStatus, Mode=TwoWay}"
+             WidthRequest="160"
+             TextColor="Black"
+             BackgroundColor="#f0f4ff"
+             FontAttributes="Bold"
+             Margin="0,0,0,0"
+             HeightRequest="44"
+             HorizontalOptions="Start"
+             VerticalOptions="Center"
+             />
+                <Label Text="{Binding SelectedStatus}" TextColor="Black" Margin="0,0,0,5" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+
+        <!-- Header -->
+        <ScrollView Orientation="Horizontal">
+            <Grid ColumnSpacing="20" Padding="10" BackgroundColor="LightGray">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="ID" Grid.Column="0" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Tháng" Grid.Column="1" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Năm" Grid.Column="2" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Tổng tiền" Grid.Column="3" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Ngày tạo" Grid.Column="4" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Số nhà" Grid.Column="5" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Chủ nhà" Grid.Column="6" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Địa chỉ" Grid.Column="7" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Trạng thái" Grid.Column="8" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Tùy chỉnh" Grid.Column="9" FontAttributes="Bold" TextColor="Black" />
+            </Grid>
+        </ScrollView>
+
+       
+        <!-- Danh sách hóa đơn -->
+        <ScrollView Orientation="Horizontal">
+            <CollectionView
+                x:Name="invoiceCollectionView"
+                ItemsSource="{Binding FilteredInvoices}"
+                SelectionMode="Single"
+                HeightRequest="400">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame
+                            BackgroundColor="Beige"
+                            CornerRadius="5"
+                            Padding="10"
+                            Margin="0,5"
+                            HasShadow="False"
+                            BorderColor="Transparent">
+                            <Grid ColumnSpacing="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="150" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Id}" Grid.Column="0" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding Month}" Grid.Column="1" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding Year}" Grid.Column="2" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding TotalAmount}" Grid.Column="3" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding CreatedDate, StringFormat='{0:dd/MM/yyyy}'}" Grid.Column="4" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding House.HouseNumber}" Grid.Column="5" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding House.OwnerName}" Grid.Column="6" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding House.Address}" Grid.Column="7" TextColor="Black" VerticalOptions="Center" />
+                                <Label Text="{Binding Status}" Grid.Column="8" TextColor="Black" VerticalOptions="Center" />
+
+                                <!-- Nút chức năng -->
+                                <HorizontalStackLayout Grid.Column="9" Spacing="5" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Button
+                                        Text="Sửa"
+                                        BackgroundColor="LightGray"
+                                        TextColor="Black"
+                                        CornerRadius="10"
+                                        Padding="10,5"
+                                        Command="{Binding BindingContext.EditCommand, Source={x:Reference invoiceCollectionView}}"
+                                        CommandParameter="{Binding .}" />
+
+                                    <Button
+                                        Text="Chi tiết"
+                                        BackgroundColor="DodgerBlue"
+                                        TextColor="White"
+                                        CornerRadius="10"
+                                        Padding="10,5"
+                                        Command="{Binding BindingContext.ViewHouseDetailCommand, Source={x:Reference invoiceCollectionView}}"
+                                        CommandParameter="{Binding House}" />
+                                </HorizontalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>

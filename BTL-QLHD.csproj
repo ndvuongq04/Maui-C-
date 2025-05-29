@@ -87,7 +87,16 @@
 	  <MauiXaml Update="View\HousePages\HousePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\InvoicePage.xaml">
+	  <MauiXaml Update="View\InvoicePages\AddInvoicePopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\InvoicePages\InvoicePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\InvoicePages\UpdateInvoicePopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\InvoicePages\ViewDetailInvoicePopup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\ServicePages\AddServiceCategoryPopup.xaml">

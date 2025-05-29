@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\servicecategorypages\\updateservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\servicecategorypages\\updateservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicepages\\updateinvoicepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicepages\\updateinvoicepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\servicecategorypages\\addservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\servicecategorypages\\addservicecategorypopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicepages\\invoicepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicepages\\invoicepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\servicepages\\servicecategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\servicepages\\servicecategorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicepages\\invoicepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicepages\\invoicepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\servicecategorypages\\servicecategorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\servicecategorypages\\servicecategorypageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicepages\\updateinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicepages\\updateinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicepages\\viewdetailinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicepages\\viewdetailinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicepages\\viewdetailinvoicepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicepages\\viewdetailinvoicepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateServiceCategoryPopupViewModel.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs*",
-              "RelativeToolTip": "ViewModels\\ServiceCategoryPages\\UpdateServiceCategoryPopupViewModel.cs*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAhwAAAAAAAAAAAAAAAAA==",
+              "Title": "UpdateInvoicePopupViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\UpdateInvoicePopupViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoicePages\\UpdateInvoicePopupViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\UpdateInvoicePopupViewModel.cs*",
+              "RelativeToolTip": "ViewModels\\InvoicePages\\UpdateInvoicePopupViewModel.cs*",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAnwFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T18:40:37.121Z",
+              "WhenOpened": "2025-05-29T15:13:35.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddServiceCategoryPopupViewModel.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
-              "RelativeToolTip": "ViewModels\\ServiceCategoryPages\\AddServiceCategoryPopupViewModel.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ViewDetailInvoicePopupViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\ViewDetailInvoicePopupViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoicePages\\ViewDetailInvoicePopupViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\ViewDetailInvoicePopupViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InvoicePages\\ViewDetailInvoicePopupViewModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T18:38:06.12Z",
+              "WhenOpened": "2025-05-29T14:32:23.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewDetailInvoicePopup.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\ViewDetailInvoicePopup.xaml",
+              "RelativeDocumentMoniker": "View\\InvoicePages\\ViewDetailInvoicePopup.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\ViewDetailInvoicePopup.xaml",
+              "RelativeToolTip": "View\\InvoicePages\\ViewDetailInvoicePopup.xaml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-29T14:25:58.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServiceCategoryPage.xaml",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\ServicePages\\ServiceCategoryPage.xaml",
-              "RelativeDocumentMoniker": "View\\ServicePages\\ServiceCategoryPage.xaml",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\ServicePages\\ServiceCategoryPage.xaml",
-              "RelativeToolTip": "View\\ServicePages\\ServiceCategoryPage.xaml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAcwDAAAAAAAAAAAAAAAA==",
+              "Title": "InvoicePage.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\InvoicePage.xaml",
+              "RelativeDocumentMoniker": "View\\InvoicePages\\InvoicePage.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\InvoicePage.xaml",
+              "RelativeToolTip": "View\\InvoicePages\\InvoicePage.xaml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwCQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T18:36:23.816Z",
+              "WhenOpened": "2025-05-29T14:15:44.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvoicePageViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwB4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:02:12.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ServiceCategoryPageViewModel.cs",
-              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
-              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
-              "RelativeToolTip": "ViewModels\\ServiceCategoryPages\\ServiceCategoryPageViewModel.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAlwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T18:35:43.836Z",
+              "Title": "UpdateInvoicePopup.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "RelativeDocumentMoniker": "View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "RelativeToolTip": "View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-29T15:15:08.38Z",
               "EditorCaption": ""
             }
           ]

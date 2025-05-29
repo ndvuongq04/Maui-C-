@@ -75,11 +75,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.HousePages.U
 build_metadata.AdditionalFiles.TargetPath = View\HousePages\UpdateHousePopup.xaml
 build_metadata.AdditionalFiles.RelativePath = View\HousePages\UpdateHousePopup.xaml
 
-[D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoicePage.xaml]
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoicePages/AddInvoicePopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoicePage.xaml
-build_metadata.AdditionalFiles.TargetPath = View\InvoicePage.xaml
-build_metadata.AdditionalFiles.RelativePath = View\InvoicePage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoicePages.AddInvoicePopup.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InvoicePages\AddInvoicePopup.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InvoicePages\AddInvoicePopup.xaml
+
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoicePages/InvoicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoicePages.InvoicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InvoicePages\InvoicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InvoicePages\InvoicePage.xaml
+
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoicePages/UpdateInvoicePopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoicePages.UpdateInvoicePopup.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InvoicePages\UpdateInvoicePopup.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InvoicePages\UpdateInvoicePopup.xaml
+
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoicePages/ViewDetailInvoicePopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoicePages.ViewDetailInvoicePopup.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InvoicePages\ViewDetailInvoicePopup.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InvoicePages\ViewDetailInvoicePopup.xaml
 
 [D:/Dai_hoc/NET-1/BTL-QLHD/View/ServicePages/AddServiceCategoryPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="BTL_QLHD.View.InvoicePages.ViewDetailInvoicePopup">
+
+    <Frame
+        BackgroundColor="White"
+        CornerRadius="16"
+        Padding="25"
+        WidthRequest="700"
+        HeightRequest="700"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        HasShadow="True">
+
+        <ScrollView>
+            <VerticalStackLayout Spacing="12">
+
+                <!-- Tiêu đề -->
+                <Label Text="Chi tiết hóa đơn"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#333" />
+
+                <!-- Thông tin nhà -->
+                <Label Text="Số nhà:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding SelectedHouse.HouseNumber}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <Label Text="Tên chủ nhà:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding SelectedHouse.OwnerName}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <Label Text="Địa chỉ:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding SelectedHouse.Address}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <Label Text="Số điện thoại:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding SelectedHouse.OwnerPhone}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <!-- Tháng/Năm -->
+                <Label Text="Tháng:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding Month}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <Label Text="Năm:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding Year}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <!-- Ngày lập -->
+                <Label Text="Ngày lập:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding InvoiceDate, StringFormat='{0:dd/MM/yyyy}'}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                
+
+                <!-- Mô tả -->
+                <Label Text="Mô tả:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding Description}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+
+                <!-- Dịch vụ sử dụng -->
+                <Label Text="Dịch vụ sử dụng" FontAttributes="Bold" TextColor="#222" />
+
+                <CollectionView ItemsSource="{Binding ServiceUsages}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="2*,1.2*,1.2*,1.2*,1.5*" Padding="0,4">
+                                <Label Text="{Binding ServiceName}"
+                                       Grid.Column="0"
+                                       VerticalOptions="Center"
+                                       TextColor="#333" />
+
+                                <Label Text="{Binding PriceWithUnit}"
+                                       Grid.Column="1"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       TextColor="#000"
+                                       BackgroundColor="White" />
+
+                                <Label Text="{Binding Unit}"
+                                       Grid.Column="2"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       TextColor="#666" />
+
+                                <Label Text="{Binding UsageValue}"
+                                       Grid.Column="3"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       TextColor="#000"
+                                       BackgroundColor="White" />
+
+                                <Label Text="{Binding TotalWithUnit}"
+                                       Grid.Column="4"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       TextColor="#000"
+                                       BackgroundColor="White" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Tổng tiền -->
+                <Label Text="Tổng tiền (VNĐ):" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding TotalAmount}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4" />
+
+                <!-- Trạng thái -->
+                <Label Text="Trạng thái:" TextColor="#444" FontSize="14" />
+                <Label Text="{Binding Status}" TextColor="#222" FontSize="16" Background="#E0E0E0" Padding="4"/>
+                
+                <!-- Nút đóng -->
+                <Button Text="Đóng"
+                        Clicked="OnCloseClicked"
+                        BackgroundColor="red"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Padding="10,5"
+                        HorizontalOptions="Center"
+                        Margin="0,10,0,0" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </Frame>
+</toolkit:Popup>
