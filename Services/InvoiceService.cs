@@ -14,6 +14,9 @@ namespace BTL_QLHD.Services
     {
         private readonly SQLiteAsyncConnection _connection;
 
+        // Add a public property to expose the connection
+        public SQLiteAsyncConnection Connection => _connection;
+
         public InvoiceService(SQLiteAsyncConnection connection)
         {
             _connection = connection;

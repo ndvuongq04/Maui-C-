@@ -43,12 +43,12 @@
 
                 <!-- Tháng -->
                 <Label Text="Tháng" TextColor="#444" FontSize="14" />
-                <Entry Text="{Binding Month, Mode=TwoWay}"
-                       Placeholder="Nhập tháng"
-                       Keyboard="Numeric"
-                       TextColor="#222"
-                       HeightRequest="40"
-                       BackgroundColor="White" />
+                <Picker
+                    ItemsSource="{Binding MonthList}"
+                    SelectedItem="{Binding Month, Mode=TwoWay}"
+                    BackgroundColor="White"
+                    TextColor="#222"
+                    HeightRequest="40" />
 
                 <!-- Năm -->
                 <Label Text="Năm" TextColor="#444" FontSize="14" />

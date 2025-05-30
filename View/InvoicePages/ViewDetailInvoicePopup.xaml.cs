@@ -4,17 +4,15 @@ using CommunityToolkit.Maui.Views;
 
 namespace BTL_QLHD.View.InvoicePages;
 
-public partial class ViewDetailInvoicePopup : Popup // <-- phải kế thừa từ Popup
+public partial class ViewDetailInvoicePopup : CommunityToolkit.Maui.Views.Popup
 {
-    public ViewDetailInvoicePopup(int invoiceId)
+    public ViewDetailInvoicePopup(int invoiceId, InvoiceService invoiceService, HouseService houseService, ServiceUsageService serviceUsageService, ServiceCategoryService serviceCategoryService)
     {
         InitializeComponent();
-        BindingContext = new ViewDetailInvoicePopupViewModel(
-            invoiceId,
-            Helpers.ServiceHelper.GetService<InvoiceService>(),
-            Helpers.ServiceHelper.GetService<HouseService>(),
-            Helpers.ServiceHelper.GetService<ServiceUsageService>(),
-            Helpers.ServiceHelper.GetService<ServiceCategoryService>());
+        var vm = new ViewDetailInvoicePopupViewModel(invoiceId, invoiceService, houseService, serviceUsageService, serviceCategoryService);
+        BindingContext = vm;
+        // Gọi reload ngay sau khi gán BindingContext
+        _ = vm.ReloadAsync(invoiceId);
     }
 
     private void OnCloseClicked(object sender, System.EventArgs e)

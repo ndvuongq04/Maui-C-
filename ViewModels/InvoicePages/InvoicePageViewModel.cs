@@ -10,6 +10,7 @@ using BTL_QLHD.Models;
 using CommunityToolkit.Maui.Views;
 using BTL_QLHD.View.InvoicePages;
 using System.Windows.Input;
+using SQLite;
 
 namespace BTL_QLHD.ViewModels.InvoicePages
 {
@@ -41,9 +42,14 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         {
             _invoiceService = invoiceService;
             _houseService = houseService;
+
+            // Initialize non-nullable fields/properties
+            searchKeyword = string.Empty;
+            //ViewDetailCommand = new RelayCommand<Invoice>(invoice => OnViewDetail(invoice));
+
             _ = LoadInvoicesAsync();
 
-            ViewHouseDetailCommand = new RelayCommand<House>(OnViewHouseDetail);
+            ViewHouseDetailCommand = new RelayCommand<House>(OnViewHouseDetail!);
         }
 
         // Tải danh sách hóa đơn và gán thông tin House
@@ -54,7 +60,7 @@ namespace BTL_QLHD.ViewModels.InvoicePages
 
             foreach (var invoice in allInvoices)
             {
-                invoice.House = allHouses.FirstOrDefault(h => h.Id == invoice.HouseId);
+                invoice.House = allHouses.FirstOrDefault(h => h.Id == invoice.HouseId) ?? new House();
             }
 
             // Tạo danh sách tháng/năm duy nhất từ DB
@@ -168,7 +174,13 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         public async Task ViewDetailAsync(Invoice invoice)
         {
             if (invoice == null) return;
-            var popup = new ViewDetailInvoicePopup(invoice.Id);
+            var popup = new ViewDetailInvoicePopup(
+                invoice.Id, 
+                _invoiceService, 
+                _houseService, 
+                new ServiceUsageService(GetConnectionFromInvoiceService(_invoiceService)), // Use helper method
+                new ServiceCategoryService(GetConnectionFromInvoiceService(_invoiceService)) // Use helper method
+            );
             await Shell.Current.CurrentPage.ShowPopupAsync(popup);
         }
 
@@ -185,12 +197,37 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         {
             if (house == null) return;
 
-            // Lấy hóa đơn tương ứng với nhà này (ví dụ: hóa đơn đang chọn)
             var invoice = FilteredInvoices.FirstOrDefault(i => i.HouseId == house.Id);
             if (invoice == null) return;
 
-            var popup = new ViewDetailInvoicePopup(invoice.Id);
+            var popup = new ViewDetailInvoicePopup(
+                invoice.Id, 
+                _invoiceService, 
+                _houseService, 
+                new ServiceUsageService(GetConnectionFromInvoiceService(_invoiceService)), // Pass connection
+                new ServiceCategoryService(GetConnectionFromInvoiceService(_invoiceService)) // Pass connection
+            );
             await Shell.Current.CurrentPage.ShowPopupAsync(popup);
+        }
+
+        private async Task OnViewDetail(Invoice? invoice)
+        {
+            if (invoice == null) return;
+            var popup = new ViewDetailInvoicePopup(
+                invoice.Id,
+                _invoiceService,
+                _houseService,
+                new ServiceUsageService(GetConnectionFromInvoiceService(_invoiceService)),
+                new ServiceCategoryService(GetConnectionFromInvoiceService(_invoiceService))
+            );
+            await Shell.Current.CurrentPage.ShowPopupAsync(popup);
+        }
+
+        private SQLiteAsyncConnection GetConnectionFromInvoiceService(InvoiceService invoiceService)
+        {
+            // Assuming InvoiceService does not have a GetConnection method, 
+            // expose the _connection field via a public property or method.
+            return invoiceService.Connection;
         }
     }
 }

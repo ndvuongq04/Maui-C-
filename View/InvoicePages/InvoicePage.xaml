@@ -155,8 +155,8 @@
                                         TextColor="White"
                                         CornerRadius="10"
                                         Padding="10,5"
-                                        Command="{Binding BindingContext.ViewHouseDetailCommand, Source={x:Reference invoiceCollectionView}}"
-                                        CommandParameter="{Binding House}" />
+                                        Command="{Binding BindingContext.ViewDetailCommand, Source={x:Reference invoiceCollectionView}}"
+                                        CommandParameter="{Binding .}" />
                                 </HorizontalStackLayout>
                             </Grid>
                         </Frame>

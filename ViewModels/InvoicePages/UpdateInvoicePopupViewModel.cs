@@ -21,7 +21,12 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         [ObservableProperty] private float price;
         public string PriceWithUnit => $"{Price:N0} VND";
         public event Action? UsageValueChanged;
-        partial void OnUsageValueChanged(int value) => UsageValueChanged?.Invoke();
+
+        partial void OnUsageValueChanged(int value)
+        {
+            UsageValueChanged?.Invoke();
+            OnPropertyChanged(nameof(UsageValue));
+        }
     }
 
     public partial class UpdateInvoicePopupViewModel : ObservableObject
@@ -44,6 +49,7 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         [ObservableProperty] private ObservableCollection<UpdateServiceUsageInput> serviceUsages = new();
 
         public List<string> StatusList { get; } = new() { "Đã thanh toán", "Chưa thanh toán" };
+        public List<int> MonthList { get; } = Enumerable.Range(1, 12).ToList();
 
         public Action? OnReloadDetailInvoice { get; set; }
 
@@ -100,6 +106,13 @@ namespace BTL_QLHD.ViewModels.InvoicePages
             }).ToList();
 
             ServiceUsages = new ObservableCollection<UpdateServiceUsageInput>(usageInputs);
+
+            // Đăng ký lại sự kiện khi ServiceUsages thay đổi
+            foreach (var input in ServiceUsages)
+            {
+                input.UsageValueChanged -= UpdateTotalAmount;
+                input.UsageValueChanged += UpdateTotalAmount;
+            }
             UpdateTotalAmount();
         }
 

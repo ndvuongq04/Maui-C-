@@ -45,17 +45,18 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         public ViewDetailInvoicePopupViewModel(Invoice invoice)
         {
             SelectedHouse = invoice.House;
-            // Gán các thuộc tính khác nếu cần
+            
+
         }
 
         private async Task LoadAsync(int invoiceId)
         {
+            // Lấy hóa đơn theo invoiceId
             Invoice = await _invoiceService.GetInvoiceAsync(invoiceId);
             if (Invoice != null)
             {
+                // Lấy thông tin nhà theo HouseId của hóa đơn
                 House = await _houseService.GetHouseAsync(Invoice.HouseId);
-
-                // Gán House cho SelectedHouse để binding ra UI
                 SelectedHouse = House;
 
                 Month = Invoice.Month;
@@ -65,19 +66,26 @@ namespace BTL_QLHD.ViewModels.InvoicePages
                 TotalAmount = Invoice.TotalAmount.ToString("N0");
                 Description = Invoice.Note;
 
-                var usages = await _serviceUsageService.GetServiceUsagesByInvoiceAsync(Invoice.Id);
+                // Lấy tất cả dịch vụ
                 var categories = await _serviceCategoryService.GetServiceCategoriesAsync();
+                // Lấy usage đúng theo invoiceId
+                var usages = await _serviceUsageService.GetServiceUsagesByInvoiceAsync(Invoice.Id);
 
+                // Đảm bảo mapping đúng ServiceId và InvoiceId
                 ServiceUsages = new ObservableCollection<ServiceUsageDetail>(
-                    from usage in usages
-                    join cat in categories on usage.ServiceId equals cat.Id
-                    select new ServiceUsageDetail
+                    categories.Select(cat =>
                     {
-                        ServiceName = cat.Name,
-                        Unit = cat.Unit,
-                        Price = cat.Price,
-                        UsageValue = usage.UsageValue
-                    });
+                        // Chỉ lấy usage đúng serviceId và đúng invoiceId
+                        var usage = usages.FirstOrDefault(u => u.ServiceId == cat.Id && u.InvoiceId == Invoice.Id);
+                        return new ServiceUsageDetail
+                        {
+                            ServiceName = cat.Name,
+                            Unit = cat.Unit,
+                            Price = cat.Price,
+                            UsageValue = usage?.UsageValue ?? 0
+                        };
+                    })
+                );
             }
         }
 
@@ -87,6 +95,12 @@ namespace BTL_QLHD.ViewModels.InvoicePages
             {
                 await LoadAsync(Invoice.Id);
             }
+        }
+
+        // Đảm bảo luôn lấy dữ liệu mới nhất khi mở ViewDetail
+        public async Task ReloadAsync(int invoiceId)
+        {
+            await LoadAsync(invoiceId);
         }
     }
 
@@ -104,5 +118,6 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         public string TotalWithUnit => $"{Total:N0} VND";
     }
 }
+
 
 
