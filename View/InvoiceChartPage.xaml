@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="BTL_QLHD.View.InvoiceChartPage"
+             Title="Trang chủ"
+             BackgroundColor="#f9f9f9">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Dòng 4 ô thống kê -->
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Card 1 -->
+            <Frame Grid.Column="0" HeightRequest="120"
+                   CornerRadius="12"
+                   Padding="10"
+                   BackgroundColor="LightBlue"
+                   HasShadow="True">
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="🏠" FontSize="28" HorizontalOptions="Center"/>
+                    <Label Text="{Binding TotalHouses}" FontSize="22" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                    <Label Text="Số nhà" FontSize="14" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Card 2 -->
+            <Frame Grid.Column="1" HeightRequest="120"
+                   CornerRadius="12"
+                   Padding="10"
+                   BackgroundColor="LightGreen"
+                   HasShadow="True">
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="🛠️" FontSize="28" HorizontalOptions="Center"/>
+                    <Label Text="{Binding TotalServices}" FontSize="22" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                    <Label Text="Số dịch vụ" FontSize="14" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Card 3 -->
+            <Frame Grid.Column="2" HeightRequest="120"
+                   CornerRadius="12"
+                   Padding="10"
+                   BackgroundColor="Orange"
+                   HasShadow="True">
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="💸" FontSize="28" HorizontalOptions="Center"/>
+                    <Label Text="{Binding UnpaidInvoices}" FontSize="22" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                    <Label Text="Hóa đơn chưa thanh toán" FontSize="14" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Card 4 -->
+            <Frame Grid.Column="3" HeightRequest="120"
+                   CornerRadius="12"
+                   Padding="10"
+                   BackgroundColor="MediumPurple"
+                   HasShadow="True">
+                <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="✅" FontSize="28" HorizontalOptions="Center"/>
+                    <Label Text="{Binding PaidInvoices}" FontSize="22" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+                    <Label Text="Hóa đơn đã thanh toán" FontSize="14" TextColor="White" HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+
+        <!-- Tiêu đề -->
+        <Label 
+            Text="📊 Biểu đồ tổng hóa đơn theo tháng"
+            FontSize="22"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="#2c3e50" />
+
+        <!-- Biểu đồ -->
+        <Frame CornerRadius="12"
+               Padding="15"
+               HasShadow="True"
+               BackgroundColor="White"
+               BorderColor="#ddd"
+               HeightRequest="350">
+            <microcharts:ChartView
+                Chart="{Binding InvoiceChart}"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" />
+        </Frame>
+
+        <!-- Ghi chú -->
+        <Label
+            Text="(Tổng tiền tính theo từng tháng dựa trên ngày tạo hóa đơn)"
+            FontSize="13"
+            TextColor="#7f8c8d"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Margin="0,10,0,0" />
+    </VerticalStackLayout>
+</ContentPage>

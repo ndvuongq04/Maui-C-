@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -96,6 +100,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.11, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[3.119.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -156,6 +164,10 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -177,6 +189,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.11, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[3.119.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -225,6 +241,10 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -246,6 +266,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.11, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[3.119.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -295,6 +319,10 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
+            "Microcharts.Maui": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -310,6 +338,10 @@
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.11, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[3.119.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

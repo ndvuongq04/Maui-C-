@@ -32,7 +32,6 @@
         <HorizontalStackLayout Padding="10" Spacing="20" VerticalOptions="Start" Margin="0,0,0,5" >
             <VerticalStackLayout>
                 <Picker
-             Title="Chọn tháng/năm"
              ItemsSource="{Binding MonthYearList}"
              SelectedItem="{Binding SelectedMonthYear, Mode=TwoWay}"
              WidthRequest="160"
@@ -44,13 +43,11 @@
              HorizontalOptions="Start"
              VerticalOptions="Center"
              />
-            <Label Text="{Binding SelectedMonthYear}" TextColor="Black" Margin="0,0,0,5" />
 
             </VerticalStackLayout>
 
             <VerticalStackLayout>
                 <Picker
-             Title="Trạng thái"
              ItemsSource="{Binding StatusList}"
              SelectedItem="{Binding SelectedStatus, Mode=TwoWay}"
              WidthRequest="160"
@@ -62,7 +59,6 @@
              HorizontalOptions="Start"
              VerticalOptions="Center"
              />
-                <Label Text="{Binding SelectedStatus}" TextColor="Black" Margin="0,0,0,5" />
             </VerticalStackLayout>
         </HorizontalStackLayout>
 

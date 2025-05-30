@@ -9,6 +9,7 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxMan
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microcharts.Maui.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -42,6 +43,11 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microso
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WinUI.Native.Projection.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Controls.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Maui.Core.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.Windows.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
@@ -83,6 +89,11 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hans
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\libSkiaSharp.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WinUI.Native.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.Views.WinUI.Native.winmd
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\libEGL.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\libGLESv2.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
@@ -187,3 +198,4 @@ D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifi
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\.winmd_cache\$SkiaSharp.Views.WinUI.Native.winmd_638811997420000000.json

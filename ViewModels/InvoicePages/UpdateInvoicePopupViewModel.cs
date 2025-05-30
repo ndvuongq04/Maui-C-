@@ -51,6 +51,7 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         public List<string> StatusList { get; } = new() { "Đã thanh toán", "Chưa thanh toán" };
         public List<int> MonthList { get; } = Enumerable.Range(1, 12).ToList();
 
+
         public Action? OnReloadDetailInvoice { get; set; }
 
         public UpdateInvoicePopupViewModel(

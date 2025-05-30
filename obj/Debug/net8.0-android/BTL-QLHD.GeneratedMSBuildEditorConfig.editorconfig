@@ -71,6 +71,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.HousePages.U
 build_metadata.AdditionalFiles.TargetPath = View\HousePages\UpdateHousePopup.xaml
 build_metadata.AdditionalFiles.RelativePath = View\HousePages\UpdateHousePopup.xaml
 
+[D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoiceChartPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoiceChartPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InvoiceChartPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InvoiceChartPage.xaml
+
 [D:/Dai_hoc/NET-1/BTL-QLHD/View/InvoicePages/AddInvoicePopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BTL_QLHD.View.InvoicePages.AddInvoicePopup.xaml

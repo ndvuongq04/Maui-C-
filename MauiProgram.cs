@@ -7,6 +7,7 @@ using BTL_QLHD.View.InvoicePages;
 using BTL_QLHD.View.ServicePages;
 
 using CommunityToolkit.Maui;
+using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
 using SQLite;
 using System.IO;
@@ -20,6 +21,7 @@ namespace BTL_QLHD
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMicrocharts() // Add parentheses to correctly call the method
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -58,11 +60,7 @@ namespace BTL_QLHD
             builder.Services.AddTransient<ViewDetailInvoicePopup>();
             builder.Services.AddTransient<UpdateInvoicePopup>();
 
-
-
-
-
-
+            builder.Services.AddTransient<InvoiceChartPage>();
 
 
 
@@ -81,6 +79,9 @@ namespace BTL_QLHD
             builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel>();
             builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel>();
             builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel>();
+
+
+            builder.Services.AddTransient<BTL_QLHD.ViewModels.InvoiceChartViewModel>();
 
 
             // Thêm CommunityToolkit modal

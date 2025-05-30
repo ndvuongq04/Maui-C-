@@ -4,6 +4,7 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\BTL-QLHD.pdb
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\CommunityToolkit.Maui.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\CommunityToolkit.Maui.Core.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\CommunityToolkit.Mvvm.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microcharts.Maui.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -19,6 +20,10 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.C
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Essentials.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SkiaSharp.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SkiaSharp.Views.iOS.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SkiaSharp.Views.Maui.Controls.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SkiaSharp.Views.Maui.Core.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SQLite-net.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SQLitePCLRaw.batteries_v2.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\SQLitePCLRaw.core.dll
@@ -57,6 +62,9 @@ D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\vi\Microsoft.Mau
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Info.plist
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\CodeResources
+D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\libSkiaSharp
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.CSharp.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualBasic.Core.dll
 D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualBasic.dll

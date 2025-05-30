@@ -7,13 +7,15 @@
     xmlns:house="clr-namespace:BTL_QLHD.View.HousePages"
     xmlns:service="clr-namespace:BTL_QLHD.View.ServicePages"
     xmlns:invoice="clr-namespace:BTL_QLHD.View.InvoicePages"
+    xmlns:view="clr-namespace:BTL_QLHD.View"
+    
     Shell.FlyoutBehavior="Flyout"
     Title="BTL_QLHD">
 
     <ShellContent
         Title="Trang chủ"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="mainpage" />
+        ContentTemplate="{DataTemplate view:InvoiceChartPage}"
+        Route="invoicechartpage" />
 
     <ShellContent
         Title="Quản lý nhà"

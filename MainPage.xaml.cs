@@ -1,4 +1,10 @@
-﻿namespace BTL_QLHD
+﻿using Microcharts;
+using SkiaSharp;
+using System.Globalization;
+using BTL_QLHD.Models;
+using BTL_QLHD.Services;
+
+namespace BTL_QLHD
 {
     public partial class MainPage : ContentPage
     {

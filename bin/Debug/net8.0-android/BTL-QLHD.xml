@@ -141,6 +141,12 @@
         <member name="P:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.HousePages.UpdateHousePopupViewModel.SaveAsync"/>.</summary>
         </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoiceChartViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoiceChartViewModel.InvoiceChart">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoiceChartViewModel.invoiceChart"/>
+        </member>
         <member name="T:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput">
             <inheritdoc/>
         </member>
@@ -155,6 +161,14 @@
         </member>
         <member name="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.UsageValue">
             <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.usageValue"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.Price">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.price"/>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.OnUsageValueChanged(System.Int32)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.UsageValue"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.InvoicePages.ServiceUsageInput.UsageValue"/> is changed.</remarks>
         </member>
         <member name="T:BTL_QLHD.ViewModels.InvoicePages.AddInvoicePopupViewModel">
             <inheritdoc/>
@@ -197,6 +211,7 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SearchKeyword">
             <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.searchKeyword"/>
@@ -204,10 +219,26 @@
         <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.FilteredInvoices">
             <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.filteredInvoices"/>
         </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SelectedStatus">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.selectedStatus"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SelectedMonthYear">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.selectedMonthYear"/>
+        </member>
         <member name="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.OnSearchKeywordChanged(System.String)">
             <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SearchKeyword"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SearchKeyword"/> is changed.</remarks>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.OnSelectedStatusChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SelectedStatus"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SelectedStatus"/> is changed.</remarks>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.OnSelectedMonthYearChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SelectedMonthYear"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.SelectedMonthYear"/> is changed.</remarks>
         </member>
         <member name="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.addCommand">
             <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.AddCommand"/>.</summary>
@@ -215,11 +246,113 @@
         <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.AddCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.AddAsync"/>.</summary>
         </member>
+        <member name="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.viewDetailCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.ViewDetailCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.ViewDetailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.ViewDetailAsync(BTL_QLHD.Models.Invoice)"/>.</summary>
+        </member>
         <member name="F:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.editCommand">
             <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.EditCommand"/>.</summary>
         </member>
         <member name="P:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.EditCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.InvoicePageViewModel.EditAsync(BTL_QLHD.Models.Invoice)"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput">
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.ServiceCategoryId">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.serviceCategoryId"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.ServiceName">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.serviceName"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.Unit">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.unit"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.UsageValue">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.usageValue"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.Price">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.price"/>
+        </member>
+        <member name="M:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.OnUsageValueChanged(System.Int32)">
+            <summary>Executes the logic for when <see cref="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.UsageValue"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:BTL_QLHD.ViewModels.InvoicePages.UpdateServiceUsageInput.UsageValue"/> is changed.</remarks>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.Invoice">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.invoice"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.Houses">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.houses"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.SelectedHouse">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.selectedHouse"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.Month">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.month"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.Year">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.year"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.InvoiceDate">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.invoiceDate"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.Status">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.status"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.Description">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.description"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.TotalAmount">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.totalAmount"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.ServiceUsages">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.serviceUsages"/>
+        </member>
+        <member name="F:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.updateCommand">
+            <summary>The backing field for <see cref="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.UpdateCommand"/>.</summary>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.UpdateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:BTL_QLHD.ViewModels.InvoicePages.UpdateInvoicePopupViewModel.UpdateAsync"/>.</summary>
+        </member>
+        <member name="T:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.Invoice">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.invoice"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.House">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.house"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.ServiceUsages">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.serviceUsages"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.Month">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.month"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.Year">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.year"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.InvoiceDate">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.invoiceDate"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.Status">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.status"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.TotalAmount">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.totalAmount"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.Description">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.description"/>
+        </member>
+        <member name="P:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.SelectedHouse">
+            <inheritdoc cref="F:BTL_QLHD.ViewModels.InvoicePages.ViewDetailInvoicePopupViewModel.selectedHouse"/>
         </member>
         <member name="T:BTL_QLHD.ViewModels.ServiceCategoryPages.AddServiceCategoryPopupViewModel">
             <inheritdoc/>
@@ -498,6 +631,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsSortAscending">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsSortAscending" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.InvoiceChart">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "InvoiceChart" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ServiceCategoryId">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ServiceCategoryId" generated properties.</summary>
         </member>
@@ -509,6 +645,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UsageValue">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UsageValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Price">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Price" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedHouse">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedHouse" generated properties.</summary>
@@ -537,11 +676,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FilteredInvoices">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FilteredInvoices" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedStatus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedStatus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedMonthYear">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedMonthYear" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Invoice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Invoice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.House">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "House" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Price">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Price" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AllServiceCategories">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AllServiceCategories" generated properties.</summary>
@@ -588,6 +736,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsSortAscending">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsSortAscending" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.InvoiceChart">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "InvoiceChart" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ServiceCategoryId">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ServiceCategoryId" generated properties.</summary>
         </member>
@@ -599,6 +750,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UsageValue">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UsageValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Price">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Price" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedHouse">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedHouse" generated properties.</summary>
@@ -627,11 +781,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FilteredInvoices">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FilteredInvoices" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedStatus">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedStatus" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedMonthYear">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedMonthYear" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Invoice">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Invoice" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.House">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "House" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Price">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Price" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AllServiceCategories">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AllServiceCategories" generated properties.</summary>
