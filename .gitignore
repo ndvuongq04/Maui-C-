@@ -1,1 +1,45 @@
+# ----------------------
+# Build & VS-related
+# ----------------------
+bin/
+obj/
 .vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ----------------------
+# Mac Catalyst
+# ----------------------
+*/bin/
+*/obj/
+
+# ----------------------
+# iOS / Android build
+# ----------------------
+**/Resources/Raw/*
+*.apk
+*.aab
+*.ipa
+
+# ----------------------
+# Xamarin / MAUI cache
+# ----------------------
+*.db
+*.db-shm
+*.db-wal
+
+# ----------------------
+# User-specific
+# ----------------------
+*.csproj.user
+*.csproj.vspscc
+*.pdb
+*.log
+
+# ----------------------
+# OS-specific
+# ----------------------
+.DS_Store
+Thumbs.db

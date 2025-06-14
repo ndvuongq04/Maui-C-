@@ -3,20 +3,76 @@
   "WorkspaceRootPath": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicechartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicechartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicepages\\invoicepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicepages\\invoicepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\housepages\\housepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\housepages\\housepageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\housepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\housepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\services\\houseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:services\\houseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\models\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:models\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\addhousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\addhousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\housepages\\updatehousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\housepages\\updatehousepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicepages\\updateinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicepages\\updateinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicepages\\addinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicepages\\addinvoicepopup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicepages\\addinvoicepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicepages\\addinvoicepopupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicechartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicechartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicechartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicechartpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\view\\invoicechartpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:view\\invoicechartpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\viewmodels\\invoicechartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:viewmodels\\invoicechartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4D30D77-08B5-46DA-B7AF-63C98E0335E4}|BTL-QLHD.csproj|d:\\dai_hoc\\net-1\\btl-qlhd\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -30,11 +86,201 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoicePageViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InvoicePages\\InvoicePageViewModel.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowGUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T15:34:36.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "demo.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\demo.cs",
+              "RelativeDocumentMoniker": "demo.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\demo.cs",
+              "RelativeToolTip": "demo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:48:29.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HouseService.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Services\\HouseService.cs",
+              "RelativeDocumentMoniker": "Services\\HouseService.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Services\\HouseService.cs",
+              "RelativeToolTip": "Services\\HouseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:08:46.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "Services\\InvoiceService.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "Services\\InvoiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:08:18.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "House.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Models\\House.cs",
+              "RelativeDocumentMoniker": "Models\\House.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Models\\House.cs",
+              "RelativeToolTip": "Models\\House.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:06:32.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddHousePopup.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\AddHousePopup.xaml",
+              "RelativeDocumentMoniker": "View\\HousePages\\AddHousePopup.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\AddHousePopup.xaml",
+              "RelativeToolTip": "View\\HousePages\\AddHousePopup.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T14:01:11.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "Services\\DataService.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\Services\\DataService.cs",
+              "RelativeToolTip": "Services\\DataService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T14:00:55.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:57:50.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateInvoicePopup.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "RelativeDocumentMoniker": "View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "RelativeToolTip": "View\\InvoicePages\\UpdateInvoicePopup.xaml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T11:36:06.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddInvoicePopup.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\AddInvoicePopup.xaml",
+              "RelativeDocumentMoniker": "View\\InvoicePages\\AddInvoicePopup.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoicePages\\AddInvoicePopup.xaml",
+              "RelativeToolTip": "View\\InvoicePages\\AddInvoicePopup.xaml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T11:17:08.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddInvoicePopupViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\AddInvoicePopupViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoicePages\\AddInvoicePopupViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoicePages\\AddInvoicePopupViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InvoicePages\\AddInvoicePopupViewModel.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T11:16:46.211Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HousePageViewModel.cs",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\HousePageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\HousePages\\HousePageViewModel.cs",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\HousePages\\HousePageViewModel.cs",
+              "RelativeToolTip": "ViewModels\\HousePages\\HousePageViewModel.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwDkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T10:56:29.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HousePage.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\HousePage.xaml",
+              "RelativeDocumentMoniker": "View\\HousePages\\HousePage.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\HousePage.xaml",
+              "RelativeToolTip": "View\\HousePages\\HousePage.xaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T10:56:21.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateHousePopup.xaml",
+              "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\UpdateHousePopup.xaml",
+              "RelativeDocumentMoniker": "View\\HousePages\\UpdateHousePopup.xaml",
+              "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\HousePages\\UpdateHousePopup.xaml",
+              "RelativeToolTip": "View\\HousePages\\UpdateHousePopup.xaml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-31T10:48:32.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -42,12 +288,11 @@
               "RelativeToolTip": "AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:16:49.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T17:16:49.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -55,44 +300,43 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-30T16:06:02.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T16:06:02.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "InvoiceChartPage.xaml.cs",
               "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoiceChartPage.xaml.cs",
               "RelativeDocumentMoniker": "View\\InvoiceChartPage.xaml.cs",
               "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoiceChartPage.xaml.cs",
               "RelativeToolTip": "View\\InvoiceChartPage.xaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBgAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T15:54:32.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "InvoiceChartViewModel.cs",
               "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoiceChartViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\InvoiceChartViewModel.cs",
               "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\ViewModels\\InvoiceChartViewModel.cs",
               "RelativeToolTip": "ViewModels\\InvoiceChartViewModel.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAUwHwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAWwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T15:54:16.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "InvoiceChartPage.xaml",
               "DocumentMoniker": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoiceChartPage.xaml",
               "RelativeDocumentMoniker": "View\\InvoiceChartPage.xaml",
               "ToolTip": "D:\\Dai_hoc\\NET-1\\BTL-QLHD\\View\\InvoiceChartPage.xaml",
               "RelativeToolTip": "View\\InvoiceChartPage.xaml",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAF0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-30T15:53:25.281Z",
               "EditorCaption": ""

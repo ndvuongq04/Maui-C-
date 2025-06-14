@@ -30,7 +30,7 @@
     <AppXManifest Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-30T17:17:14.896</Modified>
+      <Modified>2025-05-31T15:56:19.301</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BTL-QLHD.dll">
       <PackagePath>BTL-QLHD.dll</PackagePath>
-      <Modified>2025-05-30T17:17:14.336</Modified>
+      <Modified>2025-05-31T15:56:18.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BTL-QLHD.exe</PackagePath>
-      <Modified>2025-05-30T17:17:14.340</Modified>
+      <Modified>2025-05-31T15:56:18.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dai_hoc\NET-1\BTL-QLHD\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

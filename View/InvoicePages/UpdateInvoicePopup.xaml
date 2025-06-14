@@ -59,13 +59,6 @@
                        HeightRequest="40"
                        BackgroundColor="White" />
 
-                <!-- Ngày lập -->
-                <Label Text="Ngày lập" TextColor="#444" FontSize="14" />
-                <DatePicker Date="{Binding InvoiceDate, Mode=TwoWay}"
-                            HeightRequest="40"
-                            BackgroundColor="White"
-                            TextColor="#222" />
-
                 <!-- Trạng thái -->
                 <Label Text="Trạng thái" TextColor="#444" FontSize="14" />
                 <Picker ItemsSource="{Binding StatusList}"

@@ -9,7 +9,7 @@
         CornerRadius="12"
         Padding="20"
         WidthRequest="500"
-        HeightRequest="550"
+        HeightRequest="620"
         HorizontalOptions="Center"
         VerticalOptions="Center"
         HasShadow="True">

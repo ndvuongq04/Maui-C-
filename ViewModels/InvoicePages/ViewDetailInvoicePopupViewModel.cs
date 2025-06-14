@@ -45,8 +45,6 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         public ViewDetailInvoicePopupViewModel(Invoice invoice)
         {
             SelectedHouse = invoice.House;
-            
-
         }
 
         private async Task LoadAsync(int invoiceId)
@@ -114,7 +112,6 @@ namespace BTL_QLHD.ViewModels.InvoicePages
         public string PriceWithUnit => $"{Price:N0} VND";
         public float Total => Price * UsageValue; // Tổng tiền cho usage này
 
-        // Thêm property này nếu muốn binding ra XAML
         public string TotalWithUnit => $"{Total:N0} VND";
     }
 }
